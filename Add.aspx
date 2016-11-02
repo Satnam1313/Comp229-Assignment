@@ -70,7 +70,7 @@
      <asp:FileUpload  CssClass="form-control btn-primary"   ID="ImageUpload" runat="server"   /><div style="padding-top: 5px"><asp:PlaceHolder   ID="PlaceHolder1" runat="server"><mark class="text-warning">It add the description to recipe</mark></asp:PlaceHolder></div>
       </div></div>
            </div>
-            <div class="col-sm-8 btn-toolbar ">
+            <div class="col-sm-9 btn-toolbar ">
                 <input  class="btn btn-warning pull-right Cancel" id="Cancel" type="reset" value="Cancel" runat="server"/>&nbsp; <input class="btn btn-success pull-right Submit" id="Submit" type="submit" value="Submit" runat="server" />
             </div>
         </section>

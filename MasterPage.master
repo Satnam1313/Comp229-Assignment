@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="~/App_Themes/bootstrap.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
-
+  
 
     <title>Cook Book</title>
 
@@ -72,17 +72,24 @@
             </div>
         </nav>
         <hr/>
+        
+
        
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         
         <hr/>
-        <footer>
-            <h6>
-                &copy;Satnam Singh Assignment-1 Student#:300875942 Comp229-003 Fall-2016
-                Total people visits:-
-                <asp:Label ID="PageCounter" runat="server"></asp:Label>
-            </h6>
+        <footer class="container-fluid  "style="background-color: beige">
+            <div class="row col-md-offset-2 " style="font-size: 25px">
+                
+            <h4>
+                &copy;Satnam Singh Assignment-1 Student#:300875942 Comp229-003 Fall-2016 
+           
+                <i class="fa fa-users  col-md-offset-3" >&nbsp;<asp:Label ID="PageCounter"  runat="server"></asp:Label> visits</i>
+                
+            </h4>
+               
+            </div>
         </footer>
         <hr/>
     </form>
