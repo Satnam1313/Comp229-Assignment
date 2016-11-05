@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterSingin.master.cs" Inherits="MasterSingin" %>
 
 <!DOCTYPE html>
 
@@ -16,7 +16,7 @@
     <title>Cook Book</title>
 
 </head>
-<body id="page" >
+<body id="page">
 <div style="background-color: white">
     <form id="form1" runat="server">
 
@@ -39,34 +39,19 @@
 
                     </div>
                     <div class="collapse navbar-collapse" id="mycollapse">
-
-                        <ul class="nav navbar-nav  formtext">
-
-                            <li>
-                                <a class="active " href="Default.aspx">
-                                    <i class="fa fa-home"> Home</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a  href="Add.aspx">
-                                   <i class="fa fa-plus "> Add recipe</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a  href="Recipes.aspx">
-                                    <i class="fa fa-list"> Recipes</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a  href="Search.aspx">
-                                    <i class="fa fa-search "> Search</i>
-                                </a>
-                            </li>
-
-                        </ul>
-                        <div class="navbarbutton btn-toolbar ">
-                            <asp:Button CssClass="btn btn-default navbar-right control-label " Text="Sign in" runat="server"/>
-                            <asp:Button ID="color"  CssClass="btn btn-success navbar-right control-label " Text="Sign up" runat="server" OnClick="color_Click"/>
+    
+                        <div class="navbarbutton  pull-right  "><div class="dropdown">
+                                <div class="btn btn-group">
+                                    <button type="button" class="btn btn-info">Hi  <asp:Label ID="drop" runat="server" Text=""></asp:Label></button>
+                           <button type="button" class="btn btn-info dropdown-toggle" id="Premission" data-toggle="dropdown" aria-haspopup="True" aria-expanded="False"> <span class="caret"></span>
+                               <span class="sr-only"></span>
+                           </button>
+                             <ul class="dropdown-menu" aria-labelledby="Premission">
+                                <li><a href="#">Playlist</a></li>
+                                <li><a href="#">Playlist</a></li>
+                                <li><a href="#">Playlist</a></li>
+                            </ul>
+                                                </div></div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +71,7 @@
             <h4>
                 &copy;Satnam Singh Assignment-1 Student#:300875942 Comp229-003 Fall-2016 
            
-                <i class="fa fa-users  col-md-offset-3" >&nbsp;<asp:Label ID="PageCounter" CssClass="badge"  runat="server"></asp:Label> visits</i>
+                <i class="fa fa-users  col-md-offset-3" >&nbsp;<asp:Label ID="PageCounter"  runat="server"></asp:Label> visits</i>
                 
             </h4>
                

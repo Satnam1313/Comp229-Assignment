@@ -23,18 +23,10 @@ public partial class MasterPage : System.Web.UI.MasterPage
     }
     
       
-      protected void lightThemeButton_Click(object sender, EventArgs e)
+     
+    protected void color_Click(object sender, EventArgs e)
     {
-        Session["theme"] = "Light";
-        // reload the page afterward. Theme changes on Page_PreInit event
-        Response.Redirect(Request.RawUrl);
-    }
-
-    protected void darkThemeButton_Click(object sender, EventArgs e)
-    {
-        Session["theme"] = "Dark";
-        // reload the page afterward. Theme changes on Page_PreInit event
-        Response.Redirect(Request.RawUrl);
+        Response.Redirect("Signup.aspx");
     }
 }
 
